@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Sidebar*/
+.menuIcon {
+  color: #334155;
+}
+
+.menuIconWhite {
+  color: white;
+  /* background-color: #f9a109;
+  font-size: 50px !important; */
+}
+
+.menuIconContainer {
+  position: relative;
+}
+
+.indexIconContainer:hover::after,
+.historyIconContainer:hover::after,
+.statisticsIconContainer:hover::after {
+  content: "items";
+  left: 75px;
+  font-size: 10px;
+  position: absolute;
+  font-weight: 500;
+  color: white;
+  background-color: #374151;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.historyIconContainer:hover::after {
+  content: "history";
+}
+
+.statisticsIconContainer:hover::after {
+  content: "stats";
+}
