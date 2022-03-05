@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react"
 const Search = () => {
-  const [searchText, setSearchText] = useState(null)
+  const [searchText, setSearchText] = useState("")
   const onChange = (e) => {
     setSearchText(e.target.value)
   }

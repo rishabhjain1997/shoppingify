@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Router>
         <Sidebar />
-        <div className="ml-24 bg-base-200 min-h-screen px-6">
+        <div className="ml-24 bg-base-200 min-h-screen px-10">
           <Routes>
             <Route path="/" element={<Items />} />
             <Route path="/history" element={<History />} />
